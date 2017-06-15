@@ -8,109 +8,99 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * <p>
- * </p>
- *
- * @author raharisonl
- * <pre>
- * =============================================================================
- * Version - JJ/MM/AAAA - Auteur        - Objet
- * =============================================================================
- * 1.0.0   - 15 juin 2017 - raharisonl       - Création initiale
- * =============================================================================
- * </pre>
- * @since octav 1.0.0
+ * Entité Person pour la table person.
+ * 
+ * @author Raharison L
  */
-
 @Entity
 @Table(name = "person")
 public class Person {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private Integer id;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
+	private Integer id;
 
-    @Column(name = "firstname", nullable = false, unique = false)
-    private String firstName;
+	@Column(name = "firstname", nullable = false, unique = false)
+	private String firstName;
 
-    @Column(name = "lastname", nullable = false, unique = false)
-    private String lastName;
+	@Column(name = "lastname", nullable = false, unique = false)
+	private String lastName;
 
-    @Column(name = "username", nullable = false, unique = true)
-    private String userName;
+	@Column(name = "username", nullable = false, unique = true)
+	private String userName;
 
-    @Column(name = "password", nullable = false, unique = false)
-    private String password;
+	@Column(name = "password", nullable = false, unique = false)
+	private String password;
 
-    /**
-     * @return id
-     */
-    public Integer getId() {
-        return id;
-    }
+	/**
+	 * @return id
+	 */
+	public Integer getId() {
+		return id;
+	}
 
-    /**
-     * @param pId id à définir
-     */
-    public void setId(Integer pId) {
-        id = pId;
-    }
+	/**
+	 * @param pId id à définir
+	 */
+	public void setId(Integer pId) {
+		id = pId;
+	}
 
-    /**
-     * @return firstName
-     */
-    public String getFirstName() {
-        return firstName;
-    }
+	/**
+	 * @return firstName
+	 */
+	public String getFirstName() {
+		return firstName;
+	}
 
-    /**
-     * @param pFirstName firstName à définir
-     */
-    public void setFirstName(String pFirstName) {
-        firstName = pFirstName;
-    }
+	/**
+	 * @param pFirstName firstName à définir
+	 */
+	public void setFirstName(String pFirstName) {
+		firstName = pFirstName;
+	}
 
-    /**
-     * @return lastName
-     */
-    public String getLastName() {
-        return lastName;
-    }
+	/**
+	 * @return lastName
+	 */
+	public String getLastName() {
+		return lastName;
+	}
 
-    /**
-     * @param pLastName lastName à définir
-     */
-    public void setLastName(String pLastName) {
-        lastName = pLastName;
-    }
+	/**
+	 * @param pLastName lastName à définir
+	 */
+	public void setLastName(String pLastName) {
+		lastName = pLastName;
+	}
 
-    /**
-     * @return userName
-     */
-    public String getUserName() {
-        return userName;
-    }
+	/**
+	 * @return userName
+	 */
+	public String getUserName() {
+		return userName;
+	}
 
-    /**
-     * @param pUserName userName à définir
-     */
-    public void setUserName(String pUserName) {
-        userName = pUserName;
-    }
+	/**
+	 * @param pUserName userName à définir
+	 */
+	public void setUserName(String pUserName) {
+		userName = pUserName;
+	}
 
-    /**
-     * @return password
-     */
-    public String getPassword() {
-        return password;
-    }
+	/**
+	 * @return password
+	 */
+	public String getPassword() {
+		return password;
+	}
 
-    /**
-     * @param pPassword password à définir
-     */
-    public void setPassword(String pPassword) {
-        password = pPassword;
-    }
+	/**
+	 * @param pPassword password à définir
+	 */
+	public void setPassword(String pPassword) {
+		password = pPassword;
+	}
 
 }
